@@ -114,6 +114,14 @@
 			<key>name</key>
 			<string>constant.numeric.decimal.octo</string>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Subroutine names</string>
+			<key>match</key>
+			<string>(?:^|\s)+:\s+\S+\b</string>
+			<key>name</key>
+			<string>entity.name.function.octo</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.octo</string>

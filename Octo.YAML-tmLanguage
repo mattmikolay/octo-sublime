@@ -58,4 +58,8 @@ patterns:
   name: constant.numeric.decimal.octo
   match: \b[0-9]+\b
 
+- comment: Subroutine names
+  name: entity.name.function.octo
+  match: (?:^|\s)+:\s+\S+\b
+
 ...
