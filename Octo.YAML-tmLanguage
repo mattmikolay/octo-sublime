@@ -1,0 +1,25 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Octo
+scopeName: source.octo
+fileTypes: [8o]
+uuid: facc0037-7506-4917-99cb-5f57a3c85728
+
+patterns:
+- comment: Single line comments
+  name: comment.line.number-sign.octo
+  match: \#.*
+
+- comment: Binary numbers
+  name: constant.numeric.octo
+  match: 0b[01]+
+
+- comment: Hexadecimal numbers
+  name: constant.numeric.octo
+  match: 0x[0-9A-Fa-f]+
+
+- comment: Decimal numbers
+  name: constant.numeric.octo
+  match: '[0-9]+'
+
+...

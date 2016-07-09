@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>8o</string>
+	</array>
+	<key>name</key>
+	<string>Octo</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Single line comments</string>
+			<key>match</key>
+			<string>\#.*</string>
+			<key>name</key>
+			<string>comment.line.number-sign.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Binary numbers</string>
+			<key>match</key>
+			<string>0b[01]+</string>
+			<key>name</key>
+			<string>constant.numeric.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hexadecimal numbers</string>
+			<key>match</key>
+			<string>0x[0-9A-Fa-f]+</string>
+			<key>name</key>
+			<string>constant.numeric.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Decimal numbers</string>
+			<key>match</key>
+			<string>[0-9]+</string>
+			<key>name</key>
+			<string>constant.numeric.octo</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.octo</string>
+	<key>uuid</key>
+	<string>facc0037-7506-4917-99cb-5f57a3c85728</string>
+</dict>
+</plist>
