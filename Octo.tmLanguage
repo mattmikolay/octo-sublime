@@ -40,7 +40,7 @@
 			<key>match</key>
 			<string>\b0b[01]+\b</string>
 			<key>name</key>
-			<string>constant.numeric.octo</string>
+			<string>constant.numeric.binary.octo</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -48,7 +48,7 @@
 			<key>match</key>
 			<string>\b0x[0-9A-Fa-f]+\b</string>
 			<key>name</key>
-			<string>constant.numeric.octo</string>
+			<string>constant.numeric.hexadecimal.octo</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -56,7 +56,7 @@
 			<key>match</key>
 			<string>\b[0-9]+\b</string>
 			<key>name</key>
-			<string>constant.numeric.octo</string>
+			<string>constant.numeric.decimal.octo</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

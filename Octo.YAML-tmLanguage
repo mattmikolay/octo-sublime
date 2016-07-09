@@ -19,15 +19,15 @@ patterns:
   match: ==|!=|<=|>=|<|>
 
 - comment: Binary numbers
-  name: constant.numeric.octo
+  name: constant.numeric.binary.octo
   match: \b0b[01]+\b
 
 - comment: Hexadecimal numbers
-  name: constant.numeric.octo
+  name: constant.numeric.hexadecimal.octo
   match: \b0x[0-9A-Fa-f]+\b
 
 - comment: Decimal numbers
-  name: constant.numeric.octo
+  name: constant.numeric.decimal.octo
   match: \b[0-9]+\b
 
 ...
