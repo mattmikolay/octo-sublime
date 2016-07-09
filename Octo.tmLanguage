@@ -20,6 +20,22 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Assignment operators</string>
+			<key>match</key>
+			<string>\:=|\+=|\-=|=\-|\|=|&amp;=|\^=|&lt;&lt;=|&gt;&gt;=</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comparison operators</string>
+			<key>match</key>
+			<string>==|!=|&lt;=|&gt;=|&lt;|&gt;</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Binary numbers</string>
 			<key>match</key>
 			<string>0b[01]+</string>

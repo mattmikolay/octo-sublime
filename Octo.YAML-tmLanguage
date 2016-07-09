@@ -10,6 +10,14 @@ patterns:
   name: comment.line.number-sign.octo
   match: \#.*
 
+- comment: Assignment operators
+  name: keyword.operator.assignment.octo
+  match: \:=|\+=|\-=|=\-|\|=|&=|\^=|<<=|>>=
+
+- comment: Comparison operators
+  name: keyword.operator.comparison.octo
+  match: ==|!=|<=|>=|<|>
+
 - comment: Binary numbers
   name: constant.numeric.octo
   match: 0b[01]+
