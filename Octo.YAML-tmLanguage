@@ -26,6 +26,14 @@ patterns:
   name: keyword.operator.comparison.octo
   match: ==|!=|<=|>=|<|>
 
+- comment: Control flow keywords
+  name: keyword.control.octo
+  match: \b(?:return|if|then|begin|else|end|loop|again|while|jump|jump0)\b
+
+- comment: Return shorthand operator
+  name: keyword.control.octo
+  match: (?:^|\s)\;(?:$|\s)
+
 - comment: Binary numbers
   name: constant.numeric.binary.octo
   match: \b0b[01]+\b

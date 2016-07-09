@@ -52,6 +52,22 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Control flow keywords</string>
+			<key>match</key>
+			<string>\b(?:return|if|then|begin|else|end|loop|again|while|jump|jump0)\b</string>
+			<key>name</key>
+			<string>keyword.control.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Return shorthand operator</string>
+			<key>match</key>
+			<string>(?:^|\s)\;(?:$|\s)</string>
+			<key>name</key>
+			<string>keyword.control.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Binary numbers</string>
 			<key>match</key>
 			<string>\b0b[01]+\b</string>
