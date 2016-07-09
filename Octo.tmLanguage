@@ -38,7 +38,7 @@
 			<key>comment</key>
 			<string>Binary numbers</string>
 			<key>match</key>
-			<string>0b[01]+</string>
+			<string>\b0b[01]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.octo</string>
 		</dict>
@@ -46,7 +46,7 @@
 			<key>comment</key>
 			<string>Hexadecimal numbers</string>
 			<key>match</key>
-			<string>0x[0-9A-Fa-f]+</string>
+			<string>\b0x[0-9A-Fa-f]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.octo</string>
 		</dict>
@@ -54,7 +54,7 @@
 			<key>comment</key>
 			<string>Decimal numbers</string>
 			<key>match</key>
-			<string>[0-9]+</string>
+			<string>\b[0-9]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.octo</string>
 		</dict>

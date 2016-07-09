@@ -20,14 +20,14 @@ patterns:
 
 - comment: Binary numbers
   name: constant.numeric.octo
-  match: 0b[01]+
+  match: \b0b[01]+\b
 
 - comment: Hexadecimal numbers
   name: constant.numeric.octo
-  match: 0x[0-9A-Fa-f]+
+  match: \b0x[0-9A-Fa-f]+\b
 
 - comment: Decimal numbers
   name: constant.numeric.octo
-  match: '[0-9]+'
+  match: \b[0-9]+\b
 
 ...
