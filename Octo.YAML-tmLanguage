@@ -34,6 +34,19 @@ patterns:
   name: keyword.control.octo
   match: (?:^|\s)\;(?:$|\s)
 
+- comment: Statement keywords (standard)
+  name: keyword.other.octo
+  match: \b(?:clear|bcd|save|load|sprite|hex|random)\b
+
+- comment: Statement keywords (SCHIP)
+  name: keyword.other.octo
+  match: '\b(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit
+            |saveflags|loadflags)\b'
+
+- comment: Statement keywords (XO-Chip)
+  name: keyword.other.octo
+  match: \b(?:long|plane|audio|scroll-up)\b
+
 - comment: Binary numbers
   name: constant.numeric.binary.octo
   match: \b0b[01]+\b

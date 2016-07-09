@@ -68,6 +68,30 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Statement keywords (standard)</string>
+			<key>match</key>
+			<string>\b(?:clear|bcd|save|load|sprite|hex|random)\b</string>
+			<key>name</key>
+			<string>keyword.other.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Statement keywords (SCHIP)</string>
+			<key>match</key>
+			<string>\b(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit |saveflags|loadflags)\b</string>
+			<key>name</key>
+			<string>keyword.other.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Statement keywords (XO-Chip)</string>
+			<key>match</key>
+			<string>\b(?:long|plane|audio|scroll-up)\b</string>
+			<key>name</key>
+			<string>keyword.other.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Binary numbers</string>
 			<key>match</key>
 			<string>\b0b[01]+\b</string>
