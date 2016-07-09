@@ -40,8 +40,7 @@ patterns:
 
 - comment: Statement keywords (SCHIP)
   name: keyword.other.octo
-  match: '\b(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit
-            |saveflags|loadflags)\b'
+  match: \b(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit|saveflags|loadflags)\b
 
 - comment: Statement keywords (XO-Chip)
   name: keyword.other.octo

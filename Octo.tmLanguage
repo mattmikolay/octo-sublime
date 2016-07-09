@@ -78,7 +78,7 @@
 			<key>comment</key>
 			<string>Statement keywords (SCHIP)</string>
 			<key>match</key>
-			<string>\b(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit |saveflags|loadflags)\b</string>
+			<string>\b(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit|saveflags|loadflags)\b</string>
 			<key>name</key>
 			<string>keyword.other.octo</string>
 		</dict>
