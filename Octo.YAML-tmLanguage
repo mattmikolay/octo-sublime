@@ -10,6 +10,14 @@ patterns:
   name: comment.line.number-sign.octo
   match: \#.*
 
+- comment: Data registers
+  name: variable.language.vreg.octo
+  match: \b(?i:v[0-9a-f])\b
+
+- comment: Address register
+  name: variable.language.ireg.octo
+  match: \bi\b
+
 - comment: Assignment operators
   name: keyword.operator.assignment.octo
   match: \:=|\+=|\-=|=\-|\|=|&=|\^=|<<=|>>=
