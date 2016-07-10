@@ -34,6 +34,10 @@ patterns:
   name: keyword.control.octo
   match: (?:^|\s)\;(?:$|\s)
 
+- comment: alias and const directives
+  name: storage.type.octo
+  match: (?:^|\s)(?:\:alias|\:const)\b
+
 - comment: Statement keywords (standard)
   name: keyword.other.octo
   match: \b(?:clear|bcd|save|load|sprite|hex|random)\b

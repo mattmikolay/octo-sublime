@@ -68,6 +68,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>alias and const directives</string>
+			<key>match</key>
+			<string>(?:^|\s)(?:\:alias|\:const)\b</string>
+			<key>name</key>
+			<string>storage.type.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Statement keywords (standard)</string>
 			<key>match</key>
 			<string>\b(?:clear|bcd|save|load|sprite|hex|random)\b</string>
