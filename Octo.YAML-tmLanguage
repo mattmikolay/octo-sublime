@@ -38,6 +38,10 @@ patterns:
   name: storage.type.octo
   match: (?:^|\s)(?:\:alias|\:const)\b
 
+- comment: Self-modifying code commands
+  name: support.function.octo
+  match: (?:^|\s)(?:\:unpack|\:next|\:org)\b
+
 - comment: Statement keywords (standard)
   name: keyword.other.octo
   match: \b(?:clear|bcd|save|load|sprite|hex|random)\b
