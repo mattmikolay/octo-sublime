@@ -84,6 +84,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Breakpoint command</string>
+			<key>match</key>
+			<string>(?:^|\s)(?:\:breakpoint)\b</string>
+			<key>name</key>
+			<string>support.function.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Statement keywords (standard)</string>
 			<key>match</key>
 			<string>\b(?:clear|bcd|save|load|sprite|hex|random)\b</string>

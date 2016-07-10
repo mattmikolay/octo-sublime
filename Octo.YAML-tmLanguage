@@ -42,6 +42,10 @@ patterns:
   name: support.function.octo
   match: (?:^|\s)(?:\:unpack|\:next|\:org)\b
 
+- comment: Breakpoint command
+  name: support.function.octo
+  match: (?:^|\s)(?:\:breakpoint)\b
+
 - comment: Statement keywords (standard)
   name: keyword.other.octo
   match: \b(?:clear|bcd|save|load|sprite|hex|random)\b
