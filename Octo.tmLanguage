@@ -91,6 +91,22 @@
 			<string>support.function.octo</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.deprecated.octo</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Deprecated commands</string>
+			<key>match</key>
+			<string>(?:^|\s)(\:proto)\b</string>
+			<key>name</key>
+			<string>keyword.other.octo</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Statement keywords (standard)</string>
 			<key>match</key>

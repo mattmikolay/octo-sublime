@@ -46,6 +46,12 @@ patterns:
   name: support.function.octo
   match: (?:^|\s)(?:\:breakpoint)\b
 
+- comment: Deprecated commands
+  name: keyword.other.octo
+  match: (?:^|\s)(\:proto)\b
+  captures:
+    '1': {name: invalid.deprecated.octo}  
+
 - comment: Statement keywords (standard)
   name: keyword.other.octo
   match: \b(?:clear|bcd|save|load|sprite|hex|random)\b
