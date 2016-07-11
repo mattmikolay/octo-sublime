@@ -110,7 +110,7 @@
 			<key>comment</key>
 			<string>Statement keywords (standard)</string>
 			<key>match</key>
-			<string>\b(?:clear|bcd|save|load|sprite|hex|random|delay|key)\b</string>
+			<string>\b(?:clear|bcd|save|load|sprite|hex|random|delay|key|buzzer|native)\b</string>
 			<key>name</key>
 			<string>keyword.other.octo</string>
 		</dict>
