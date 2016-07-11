@@ -110,7 +110,15 @@
 			<key>comment</key>
 			<string>Statement keywords (standard)</string>
 			<key>match</key>
-			<string>\b(?:clear|bcd|save|load|sprite|hex|random)\b</string>
+			<string>\b(?:clear|bcd|save|load|sprite|hex|random|delay|key)\b</string>
+			<key>name</key>
+			<string>keyword.other.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>-key keyword (needs special pattern because - character is not a word character, and \b will not recognize its boundary)</string>
+			<key>match</key>
+			<string>(?:^|\s)-key\b</string>
 			<key>name</key>
 			<string>keyword.other.octo</string>
 		</dict>

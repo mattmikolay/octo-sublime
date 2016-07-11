@@ -54,7 +54,12 @@ patterns:
 
 - comment: Statement keywords (standard)
   name: keyword.other.octo
-  match: \b(?:clear|bcd|save|load|sprite|hex|random)\b
+  match: \b(?:clear|bcd|save|load|sprite|hex|random|delay|key)\b
+
+- comment: '-key keyword (needs special pattern because - character is not a
+            word character, and \b will not recognize its boundary)'
+  name: keyword.other.octo
+  match: (?:^|\s)-key\b
 
 - comment: Statement keywords (SCHIP)
   name: keyword.other.octo
