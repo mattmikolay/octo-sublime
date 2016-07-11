@@ -32,25 +32,23 @@ patterns:
 
 - comment: Return shorthand operator
   name: keyword.control.octo
-  match: (?:^|\s)\;(?:$|\s)
+  match: (?<=^|\s)\;(?=$|\s)
 
 - comment: alias and const directives
   name: storage.type.octo
-  match: (?:^|\s)(?:\:alias|\:const)\b
+  match: (?<=^|\s)(?:\:alias|\:const)\b
 
 - comment: Self-modifying code commands
   name: support.function.octo
-  match: (?:^|\s)(?:\:unpack|\:next|\:org)\b
+  match: (?<=^|\s)(?:\:unpack|\:next|\:org)\b
 
 - comment: Breakpoint command
   name: support.function.octo
-  match: (?:^|\s)(?:\:breakpoint)\b
+  match: (?<=^|\s)(?:\:breakpoint)\b
 
 - comment: Deprecated commands
-  name: keyword.other.octo
-  match: (?:^|\s)(\:proto)\b
-  captures:
-    '1': {name: invalid.deprecated.octo}  
+  name: invalid.deprecated.octo
+  match: (?<=^|\s)(\:proto)\b
 
 - comment: Statement keywords (standard)
   name: keyword.other.octo
@@ -59,7 +57,7 @@ patterns:
 - comment: '-key keyword (needs special pattern because - character is not a
             word character, and \b will not recognize its boundary)'
   name: keyword.other.octo
-  match: (?:^|\s)-key\b
+  match: (?<=^|\s)-key\b
 
 - comment: Statement keywords (SCHIP)
   name: keyword.other.octo
@@ -83,6 +81,6 @@ patterns:
 
 - comment: Subroutine names
   name: entity.name.function.octo
-  match: (?:^|\s)+:\s+\S+\b
+  match: (?<=^|\s):\s+\S+\b
 
 ...

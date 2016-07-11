@@ -62,7 +62,7 @@
 			<key>comment</key>
 			<string>Return shorthand operator</string>
 			<key>match</key>
-			<string>(?:^|\s)\;(?:$|\s)</string>
+			<string>(?&lt;=^|\s)\;(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.control.octo</string>
 		</dict>
@@ -70,7 +70,7 @@
 			<key>comment</key>
 			<string>alias and const directives</string>
 			<key>match</key>
-			<string>(?:^|\s)(?:\:alias|\:const)\b</string>
+			<string>(?&lt;=^|\s)(?:\:alias|\:const)\b</string>
 			<key>name</key>
 			<string>storage.type.octo</string>
 		</dict>
@@ -78,7 +78,7 @@
 			<key>comment</key>
 			<string>Self-modifying code commands</string>
 			<key>match</key>
-			<string>(?:^|\s)(?:\:unpack|\:next|\:org)\b</string>
+			<string>(?&lt;=^|\s)(?:\:unpack|\:next|\:org)\b</string>
 			<key>name</key>
 			<string>support.function.octo</string>
 		</dict>
@@ -86,25 +86,17 @@
 			<key>comment</key>
 			<string>Breakpoint command</string>
 			<key>match</key>
-			<string>(?:^|\s)(?:\:breakpoint)\b</string>
+			<string>(?&lt;=^|\s)(?:\:breakpoint)\b</string>
 			<key>name</key>
 			<string>support.function.octo</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>invalid.deprecated.octo</string>
-				</dict>
-			</dict>
 			<key>comment</key>
 			<string>Deprecated commands</string>
 			<key>match</key>
-			<string>(?:^|\s)(\:proto)\b</string>
+			<string>(?&lt;=^|\s)(\:proto)\b</string>
 			<key>name</key>
-			<string>keyword.other.octo</string>
+			<string>invalid.deprecated.octo</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -118,7 +110,7 @@
 			<key>comment</key>
 			<string>-key keyword (needs special pattern because - character is not a word character, and \b will not recognize its boundary)</string>
 			<key>match</key>
-			<string>(?:^|\s)-key\b</string>
+			<string>(?&lt;=^|\s)-key\b</string>
 			<key>name</key>
 			<string>keyword.other.octo</string>
 		</dict>
@@ -166,7 +158,7 @@
 			<key>comment</key>
 			<string>Subroutine names</string>
 			<key>match</key>
-			<string>(?:^|\s)+:\s+\S+\b</string>
+			<string>(?&lt;=^|\s):\s+\S+\b</string>
 			<key>name</key>
 			<string>entity.name.function.octo</string>
 		</dict>
