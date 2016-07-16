@@ -134,7 +134,7 @@
 			<key>comment</key>
 			<string>Binary numbers</string>
 			<key>match</key>
-			<string>\b0b[01]+\b</string>
+			<string>(?&lt;=^|\s)-?0b[01]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.binary.octo</string>
 		</dict>
@@ -142,7 +142,7 @@
 			<key>comment</key>
 			<string>Hexadecimal numbers</string>
 			<key>match</key>
-			<string>\b0x[0-9A-Fa-f]+\b</string>
+			<string>(?&lt;=^|\s)-?0x[0-9A-Fa-f]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.hexadecimal.octo</string>
 		</dict>
@@ -150,7 +150,7 @@
 			<key>comment</key>
 			<string>Decimal numbers</string>
 			<key>match</key>
-			<string>\b[0-9]+\b</string>
+			<string>(?&lt;=^|\s)-?[0-9]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.decimal.octo</string>
 		</dict>
