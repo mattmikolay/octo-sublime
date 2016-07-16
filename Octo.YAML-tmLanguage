@@ -12,75 +12,66 @@ patterns:
 
 - comment: Data registers
   name: variable.language.vreg.octo
-  match: \b(?i:v[0-9a-f])\b
+  match: (?<=^|\s)(?i:v[0-9a-f])(?=$|\s)
 
 - comment: Address register
   name: variable.language.ireg.octo
-  match: \bi\b
+  match: (?<=^|\s)i(?=$|\s)
 
 - comment: Assignment operators
   name: keyword.operator.assignment.octo
-  match: \:=|\+=|\-=|=\-|\|=|&=|\^=|<<=|>>=
+  match: (?<=^|\s)(?:\:=|\+=|\-=|=\-|\|=|&=|\^=|<<=|>>=)(?=$|\s)
 
 - comment: Comparison operators
   name: keyword.operator.comparison.octo
-  match: ==|!=|<=|>=|<|>
+  match: (?<=^|\s)(?:==|!=|<=|>=|<|>)(?=$|\s)
 
 - comment: Control flow keywords
   name: keyword.control.octo
-  match: \b(?:return|if|then|begin|else|end|loop|again|while|jump|jump0)\b
-
-- comment: Return shorthand operator
-  name: keyword.control.octo
-  match: (?<=^|\s)\;(?=$|\s)
+  match: (?<=^|\s)(?:return|if|then|begin|else|end|loop|again|while|jump|jump0|\;)(?=$|\s)
 
 - comment: alias and const directives
   name: storage.type.octo
-  match: (?<=^|\s)(?:\:alias|\:const)\b
+  match: (?<=^|\s)(?:\:alias|\:const)(?=$|\s)
 
 - comment: Self-modifying code commands
   name: support.function.octo
-  match: (?<=^|\s)(?:\:unpack|\:next|\:org)\b
+  match: (?<=^|\s)(?:\:unpack|\:next|\:org)(?=$|\s)
 
 - comment: Breakpoint command
   name: support.function.octo
-  match: (?<=^|\s)(?:\:breakpoint)\b
+  match: (?<=^|\s)(?:\:breakpoint)(?=$|\s)
 
 - comment: Deprecated commands
   name: invalid.deprecated.octo
-  match: (?<=^|\s)(\:proto)\b
+  match: (?<=^|\s)(\:proto)(?=$|\s)
 
 - comment: Statement keywords (standard)
   name: keyword.other.octo
-  match: \b(?:clear|bcd|save|load|sprite|hex|random|delay|key|buzzer|native)\b
-
-- comment: '-key keyword (needs special pattern because - character is not a
-            word character, and \b will not recognize its boundary)'
-  name: keyword.other.octo
-  match: (?<=^|\s)-key\b
+  match: (?<=^|\s)(?:clear|bcd|save|load|sprite|hex|random|delay|key|-key|buzzer|native)(?=$|\s)
 
 - comment: Statement keywords (SCHIP)
   name: keyword.other.octo
-  match: \b(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit|saveflags|loadflags)\b
+  match: (?<=^|\s)(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit|saveflags|loadflags)(?=$|\s)
 
 - comment: Statement keywords (XO-Chip)
   name: keyword.other.octo
-  match: \b(?:long|plane|audio|scroll-up)\b
+  match: (?<=^|\s)(?:long|plane|audio|scroll-up)(?=$|\s)
 
 - comment: Binary numbers
   name: constant.numeric.binary.octo
-  match: (?<=^|\s)-?0b[01]+\b
+  match: (?<=^|\s)-?0b[01]+(?=$|\s)
 
 - comment: Hexadecimal numbers
   name: constant.numeric.hexadecimal.octo
-  match: (?<=^|\s)-?0x[0-9A-Fa-f]+\b
+  match: (?<=^|\s)-?0x[0-9A-Fa-f]+(?=$|\s)
 
 - comment: Decimal numbers
   name: constant.numeric.decimal.octo
-  match: (?<=^|\s)-?[0-9]+\b
+  match: (?<=^|\s)-?[0-9]+(?=$|\s)
 
 - comment: Subroutine names
   name: entity.name.function.octo
-  match: (?<=^|\s):\s+\S+\b
+  match: (?<=^|\s):\s+\S+(?=$|\s)
 
 ...

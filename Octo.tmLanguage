@@ -22,7 +22,7 @@
 			<key>comment</key>
 			<string>Data registers</string>
 			<key>match</key>
-			<string>\b(?i:v[0-9a-f])\b</string>
+			<string>(?&lt;=^|\s)(?i:v[0-9a-f])(?=$|\s)</string>
 			<key>name</key>
 			<string>variable.language.vreg.octo</string>
 		</dict>
@@ -30,7 +30,7 @@
 			<key>comment</key>
 			<string>Address register</string>
 			<key>match</key>
-			<string>\bi\b</string>
+			<string>(?&lt;=^|\s)i(?=$|\s)</string>
 			<key>name</key>
 			<string>variable.language.ireg.octo</string>
 		</dict>
@@ -38,7 +38,7 @@
 			<key>comment</key>
 			<string>Assignment operators</string>
 			<key>match</key>
-			<string>\:=|\+=|\-=|=\-|\|=|&amp;=|\^=|&lt;&lt;=|&gt;&gt;=</string>
+			<string>(?&lt;=^|\s)(?:\:=|\+=|\-=|=\-|\|=|&amp;=|\^=|&lt;&lt;=|&gt;&gt;=)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.operator.assignment.octo</string>
 		</dict>
@@ -46,7 +46,7 @@
 			<key>comment</key>
 			<string>Comparison operators</string>
 			<key>match</key>
-			<string>==|!=|&lt;=|&gt;=|&lt;|&gt;</string>
+			<string>(?&lt;=^|\s)(?:==|!=|&lt;=|&gt;=|&lt;|&gt;)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.operator.comparison.octo</string>
 		</dict>
@@ -54,15 +54,7 @@
 			<key>comment</key>
 			<string>Control flow keywords</string>
 			<key>match</key>
-			<string>\b(?:return|if|then|begin|else|end|loop|again|while|jump|jump0)\b</string>
-			<key>name</key>
-			<string>keyword.control.octo</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Return shorthand operator</string>
-			<key>match</key>
-			<string>(?&lt;=^|\s)\;(?=$|\s)</string>
+			<string>(?&lt;=^|\s)(?:return|if|then|begin|else|end|loop|again|while|jump|jump0|\;)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.control.octo</string>
 		</dict>
@@ -70,7 +62,7 @@
 			<key>comment</key>
 			<string>alias and const directives</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?:\:alias|\:const)\b</string>
+			<string>(?&lt;=^|\s)(?:\:alias|\:const)(?=$|\s)</string>
 			<key>name</key>
 			<string>storage.type.octo</string>
 		</dict>
@@ -78,7 +70,7 @@
 			<key>comment</key>
 			<string>Self-modifying code commands</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?:\:unpack|\:next|\:org)\b</string>
+			<string>(?&lt;=^|\s)(?:\:unpack|\:next|\:org)(?=$|\s)</string>
 			<key>name</key>
 			<string>support.function.octo</string>
 		</dict>
@@ -86,7 +78,7 @@
 			<key>comment</key>
 			<string>Breakpoint command</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?:\:breakpoint)\b</string>
+			<string>(?&lt;=^|\s)(?:\:breakpoint)(?=$|\s)</string>
 			<key>name</key>
 			<string>support.function.octo</string>
 		</dict>
@@ -94,7 +86,7 @@
 			<key>comment</key>
 			<string>Deprecated commands</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(\:proto)\b</string>
+			<string>(?&lt;=^|\s)(\:proto)(?=$|\s)</string>
 			<key>name</key>
 			<string>invalid.deprecated.octo</string>
 		</dict>
@@ -102,15 +94,7 @@
 			<key>comment</key>
 			<string>Statement keywords (standard)</string>
 			<key>match</key>
-			<string>\b(?:clear|bcd|save|load|sprite|hex|random|delay|key|buzzer|native)\b</string>
-			<key>name</key>
-			<string>keyword.other.octo</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>-key keyword (needs special pattern because - character is not a word character, and \b will not recognize its boundary)</string>
-			<key>match</key>
-			<string>(?&lt;=^|\s)-key\b</string>
+			<string>(?&lt;=^|\s)(?:clear|bcd|save|load|sprite|hex|random|delay|key|-key|buzzer|native)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.other.octo</string>
 		</dict>
@@ -118,7 +102,7 @@
 			<key>comment</key>
 			<string>Statement keywords (SCHIP)</string>
 			<key>match</key>
-			<string>\b(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit|saveflags|loadflags)\b</string>
+			<string>(?&lt;=^|\s)(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit|saveflags|loadflags)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.other.octo</string>
 		</dict>
@@ -126,7 +110,7 @@
 			<key>comment</key>
 			<string>Statement keywords (XO-Chip)</string>
 			<key>match</key>
-			<string>\b(?:long|plane|audio|scroll-up)\b</string>
+			<string>(?&lt;=^|\s)(?:long|plane|audio|scroll-up)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.other.octo</string>
 		</dict>
@@ -134,7 +118,7 @@
 			<key>comment</key>
 			<string>Binary numbers</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)-?0b[01]+\b</string>
+			<string>(?&lt;=^|\s)-?0b[01]+(?=$|\s)</string>
 			<key>name</key>
 			<string>constant.numeric.binary.octo</string>
 		</dict>
@@ -142,7 +126,7 @@
 			<key>comment</key>
 			<string>Hexadecimal numbers</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)-?0x[0-9A-Fa-f]+\b</string>
+			<string>(?&lt;=^|\s)-?0x[0-9A-Fa-f]+(?=$|\s)</string>
 			<key>name</key>
 			<string>constant.numeric.hexadecimal.octo</string>
 		</dict>
@@ -150,7 +134,7 @@
 			<key>comment</key>
 			<string>Decimal numbers</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)-?[0-9]+\b</string>
+			<string>(?&lt;=^|\s)-?[0-9]+(?=$|\s)</string>
 			<key>name</key>
 			<string>constant.numeric.decimal.octo</string>
 		</dict>
@@ -158,7 +142,7 @@
 			<key>comment</key>
 			<string>Subroutine names</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s):\s+\S+\b</string>
+			<string>(?&lt;=^|\s):\s+\S+(?=$|\s)</string>
 			<key>name</key>
 			<string>entity.name.function.octo</string>
 		</dict>
