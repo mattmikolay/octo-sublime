@@ -12,7 +12,7 @@ VIP computer.
 
 2. Clone this repository as a subdirectory "Octo":
 
-    git clone https://github.com/mattmikolay/octo-sublime.git Octo
+        git clone https://github.com/mattmikolay/octo-sublime.git Octo
 
 3. Restart Sublime Text 3.
 
