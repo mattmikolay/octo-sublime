@@ -37,4 +37,4 @@ included [LICENSE][5] file.
 [2]: http://en.wikipedia.org/wiki/CHIP-8 "CHIP-8"
 [3]: http://packagecontrol.io/ "Package Control"
 [4]: http://www.gnu.org/licenses/gpl-3.0.html "GNU General Public License"
-[5]: LICENSE "GNU GENERAL PUBLIC LICENSE"
+[5]: LICENSE "MIT License"
