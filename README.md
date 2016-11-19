@@ -30,11 +30,11 @@ If you're already using [Package Control][3], installing octo-sublime is easy:
 3. Restart Sublime Text 3.
 
 ## License
-This project is licensed under the [GNU General Public License version 3][4].
-For more information, see the included [LICENSE][5] file.
+This project is licensed under the MIT License. For more information, see the
+included [LICENSE][5] file.
 
 [1]: http://github.com/JohnEarnest/Octo "JohnEarnest / Octo"
 [2]: http://en.wikipedia.org/wiki/CHIP-8 "CHIP-8"
-[3]: http://packagecontrol.io/ "Package Control - the Sublime Text package manager"
+[3]: http://packagecontrol.io/ "Package Control"
 [4]: http://www.gnu.org/licenses/gpl-3.0.html "GNU General Public License"
 [5]: LICENSE "GNU GENERAL PUBLIC LICENSE"
