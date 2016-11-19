@@ -12,7 +12,7 @@ patterns:
 
 - comment: Data registers
   name: variable.language.vreg.octo
-  match: (?<=^|\s)(?i:v[0-9a-f])(?=$|\s)
+  match: (?<=^|\s)(?i:v\h)(?=$|\s)
 
 - comment: Address register
   name: variable.language.ireg.octo
@@ -60,15 +60,15 @@ patterns:
 
 - comment: Binary numbers
   name: constant.numeric.binary.octo
-  match: (?<=^|\s)-?0b[01]+(?=$|\s)
+  match: (?<=^|\s)[+\-]?0b[01]+(?=$|\s)
 
 - comment: Hexadecimal numbers
   name: constant.numeric.hexadecimal.octo
-  match: (?<=^|\s)-?0x[0-9A-Fa-f]+(?=$|\s)
+  match: (?<=^|\s)[+\-]?0x\h+(?=$|\s)
 
 - comment: Decimal numbers
   name: constant.numeric.decimal.octo
-  match: (?<=^|\s)-?[0-9]+(?=$|\s)
+  match: (?<=^|\s)[+\-]?\d+(?=$|\s)
 
 - comment: Subroutine names
   name: entity.name.function.octo

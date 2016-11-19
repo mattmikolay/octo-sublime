@@ -22,7 +22,7 @@
 			<key>comment</key>
 			<string>Data registers</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?i:v[0-9a-f])(?=$|\s)</string>
+			<string>(?&lt;=^|\s)(?i:v\h)(?=$|\s)</string>
 			<key>name</key>
 			<string>variable.language.vreg.octo</string>
 		</dict>
@@ -118,7 +118,7 @@
 			<key>comment</key>
 			<string>Binary numbers</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)-?0b[01]+(?=$|\s)</string>
+			<string>(?&lt;=^|\s)[+\-]?0b[01]+(?=$|\s)</string>
 			<key>name</key>
 			<string>constant.numeric.binary.octo</string>
 		</dict>
@@ -126,7 +126,7 @@
 			<key>comment</key>
 			<string>Hexadecimal numbers</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)-?0x[0-9A-Fa-f]+(?=$|\s)</string>
+			<string>(?&lt;=^|\s)[+\-]?0x\h+(?=$|\s)</string>
 			<key>name</key>
 			<string>constant.numeric.hexadecimal.octo</string>
 		</dict>
@@ -134,7 +134,7 @@
 			<key>comment</key>
 			<string>Decimal numbers</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)-?[0-9]+(?=$|\s)</string>
+			<string>(?&lt;=^|\s)[+\-]?\d+(?=$|\s)</string>
 			<key>name</key>
 			<string>constant.numeric.decimal.octo</string>
 		</dict>
