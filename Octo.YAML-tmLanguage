@@ -38,6 +38,10 @@ patterns:
   name: support.function.octo
   match: (?<=^|\s)(?:\:unpack|\:next|\:org)(?=$|\s)
 
+- comment: Metaprogramming commands
+  name: support.function.octo
+  match: (?<=^|\s)(?:\:macro|\:calc|\:byte)(?=$|\s)
+
 - comment: Breakpoint command
   name: support.function.octo
   match: (?<=^|\s)(?:\:breakpoint)(?=$|\s)
