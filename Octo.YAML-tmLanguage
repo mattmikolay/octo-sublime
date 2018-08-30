@@ -24,7 +24,11 @@ patterns:
 
 - comment: Comparison operators
   name: keyword.operator.comparison.octo
-  match: (?<=^|\s)(?:==|!=|<=|>=|<|>)(?=$|\s)
+  match: (?<=^|\s)(?:==|!=)(?=$|\s)
+
+- comment: Relational operators
+  name: keyword.operator.relational.octo
+  match: (?<=^|\s)(?:<=|>=|<|>)(?=$|\s)
 
 - comment: Control flow keywords
   name: keyword.control.octo

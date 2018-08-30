@@ -46,9 +46,17 @@
 			<key>comment</key>
 			<string>Comparison operators</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?:==|!=|&lt;=|&gt;=|&lt;|&gt;)(?=$|\s)</string>
+			<string>(?&lt;=^|\s)(?:==|!=)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.operator.comparison.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Relational operators</string>
+			<key>match</key>
+			<string>(?&lt;=^|\s)(?:&lt;=|&gt;=|&lt;|&gt;)(?=$|\s)</string>
+			<key>name</key>
+			<string>keyword.operator.relational.octo</string>
 		</dict>
 		<dict>
 			<key>comment</key>
