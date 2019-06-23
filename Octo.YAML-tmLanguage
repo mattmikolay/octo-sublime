@@ -32,7 +32,7 @@ patterns:
 
 - comment: Control flow keywords
   name: keyword.control.octo
-  match: (?<=^|\s)(?:return|if|then|begin|else|end|loop|again|while|jump|jump0|\;)(?=$|\s)
+  match: (?<=^|\s)(?:return|if|then|begin|else|end|loop|again|while|jump|jump0|\:call|\;)(?=$|\s)
 
 - comment: alias and const directives
   name: storage.type.octo

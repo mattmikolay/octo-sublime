@@ -62,7 +62,7 @@
 			<key>comment</key>
 			<string>Control flow keywords</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?:return|if|then|begin|else|end|loop|again|while|jump|jump0|\;)(?=$|\s)</string>
+			<string>(?&lt;=^|\s)(?:return|if|then|begin|else|end|loop|again|while|jump|jump0|\:call|\;)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.control.octo</string>
 		</dict>
