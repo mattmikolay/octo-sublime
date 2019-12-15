@@ -100,6 +100,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Memory monitor command</string>
+			<key>match</key>
+			<string>(?&lt;=^|\s)(?:\:monitor)(?=$|\s)</string>
+			<key>name</key>
+			<string>support.function.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Deprecated commands</string>
 			<key>match</key>
 			<string>(?&lt;=^|\s)(\:proto)(?=$|\s)</string>
