@@ -50,6 +50,10 @@ patterns:
   name: support.function.octo
   match: (?<=^|\s)(?:\:breakpoint)(?=$|\s)
 
+- comment: Memory monitor command
+  name: support.function.octo
+  match: (?<=^|\s)(?:\:monitor)(?=$|\s)
+
 - comment: Deprecated commands
   name: invalid.deprecated.octo
   match: (?<=^|\s)(\:proto)(?=$|\s)
