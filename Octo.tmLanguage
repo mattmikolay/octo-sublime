@@ -86,7 +86,7 @@
 			<key>comment</key>
 			<string>Metaprogramming commands</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?:\:macro|\:calc|\:byte)(?=$|\s)</string>
+			<string>(?&lt;=^|\s)(?:\:macro|\:calc|\:byte|\:stringmode)(?=$|\s)</string>
 			<key>name</key>
 			<string>support.function.octo</string>
 		</dict>
@@ -95,6 +95,14 @@
 			<string>Breakpoint command</string>
 			<key>match</key>
 			<string>(?&lt;=^|\s)(?:\:breakpoint)(?=$|\s)</string>
+			<key>name</key>
+			<string>support.function.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Assertion command</string>
+			<key>match</key>
+			<string>(?&lt;=^|\s)(?:\:assert)(?=$|\s)</string>
 			<key>name</key>
 			<string>support.function.octo</string>
 		</dict>
@@ -169,6 +177,25 @@
 			<string>(?&lt;=^|\s):\s+\S+(?=$|\s)</string>
 			<key>name</key>
 			<string>entity.name.function.octo</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>String Literals</string>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.octo</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\[tnrv0\\"]</string>
+					<key>name</key>
+					<string>constant.character.escape.octo</string>
+				</dict>
+			</array>
 		</dict>
 	</array>
 	<key>scopeName</key>
