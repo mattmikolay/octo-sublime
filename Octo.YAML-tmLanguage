@@ -44,11 +44,15 @@ patterns:
 
 - comment: Metaprogramming commands
   name: support.function.octo
-  match: (?<=^|\s)(?:\:macro|\:calc|\:byte)(?=$|\s)
+  match: (?<=^|\s)(?:\:macro|\:calc|\:byte|\:stringmode)(?=$|\s)
 
 - comment: Breakpoint command
   name: support.function.octo
   match: (?<=^|\s)(?:\:breakpoint)(?=$|\s)
+
+- comment: Assertion command
+  name: support.function.octo
+  match: (?<=^|\s)(?:\:assert)(?=$|\s)
 
 - comment: Memory monitor command
   name: support.function.octo
@@ -86,4 +90,10 @@ patterns:
   name: entity.name.function.octo
   match: (?<=^|\s):\s+\S+(?=$|\s)
 
-...
+- comment: String Literals
+  name: string.quoted.double.octo
+  begin: '"'
+  end: '"'
+  patterns:
+  - match: \\[tnrv0\\"]
+    name: constant.character.escape.octo
