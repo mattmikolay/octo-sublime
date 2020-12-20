@@ -44,7 +44,7 @@ patterns:
 
 - comment: Metaprogramming commands
   name: support.function.octo
-  match: (?<=^|\s)(?:\:macro|\:calc|\:byte|\:stringmode)(?=$|\s)
+  match: (?<=^|\s)(?:\:macro|\:calc|\:byte|\:pointer|\:stringmode)(?=$|\s)
 
 - comment: Breakpoint command
   name: support.function.octo
