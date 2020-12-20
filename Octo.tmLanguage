@@ -86,7 +86,7 @@
 			<key>comment</key>
 			<string>Metaprogramming commands</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?:\:macro|\:calc|\:byte|\:stringmode)(?=$|\s)</string>
+			<string>(?&lt;=^|\s)(?:\:macro|\:calc|\:byte|\:pointer|\:stringmode)(?=$|\s)</string>
 			<key>name</key>
 			<string>support.function.octo</string>
 		</dict>
