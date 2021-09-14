@@ -6,6 +6,12 @@ in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [v1.5.0] - 2021-09-14
+
+### Added
+
+- Add support for `pitch`
+
 ## [v1.4.0] - 2020-12-20
 
 ### Added
@@ -51,6 +57,7 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Initial release
 
+[v1.5.0]: https://github.com/mattmikolay/octo-sublime/compare/v1.4.0...v1.5.0
 [v1.4.0]: https://github.com/mattmikolay/octo-sublime/compare/v1.3.0...v1.4.0
 [v1.3.0]: https://github.com/mattmikolay/octo-sublime/compare/v1.2.0...v1.3.0
 [v1.2.0]: https://github.com/mattmikolay/octo-sublime/compare/v1.1.0...v1.2.0
