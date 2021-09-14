@@ -126,7 +126,7 @@
 			<key>comment</key>
 			<string>Statement keywords (standard)</string>
 			<key>match</key>
-			<string>(?&lt;=^|\s)(?:clear|bcd|save|load|sprite|hex|random|delay|key|-key|buzzer|native)(?=$|\s)</string>
+			<string>(?&lt;=^|\s)(?:clear|bcd|save|load|sprite|hex|random|delay|pitch|key|-key|buzzer|native)(?=$|\s)</string>
 			<key>name</key>
 			<string>keyword.other.octo</string>
 		</dict>

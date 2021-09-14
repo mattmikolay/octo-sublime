@@ -64,7 +64,7 @@ patterns:
 
 - comment: Statement keywords (standard)
   name: keyword.other.octo
-  match: (?<=^|\s)(?:clear|bcd|save|load|sprite|hex|random|delay|key|-key|buzzer|native)(?=$|\s)
+  match: (?<=^|\s)(?:clear|bcd|save|load|sprite|hex|random|delay|pitch|key|-key|buzzer|native)(?=$|\s)
 
 - comment: Statement keywords (SCHIP)
   name: keyword.other.octo
