@@ -6,6 +6,16 @@ in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+
+- Replace YAML-tmLanguage file with sublime-syntax format
+
+### Removed
+
+- Drop support for versions of Sublime Text prior to build 3092
+
 ## [v1.5.0] - 2021-09-14
 
 ### Added
@@ -57,6 +67,7 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Initial release
 
+[Unreleased]: https://github.com/mattmikolay/octo-sublime/compare/v1.5.0...HEAD
 [v1.5.0]: https://github.com/mattmikolay/octo-sublime/compare/v1.4.0...v1.5.0
 [v1.4.0]: https://github.com/mattmikolay/octo-sublime/compare/v1.3.0...v1.4.0
 [v1.3.0]: https://github.com/mattmikolay/octo-sublime/compare/v1.2.0...v1.3.0
