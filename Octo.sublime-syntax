@@ -1,0 +1,101 @@
+%YAML 1.2
+---
+name: Octo
+scope: source.octo
+file_extensions: [8o]
+
+contexts:
+  main:
+    # Single line comments
+    - scope: comment.line.number-sign.octo
+      match: \#.*
+
+    # Data registers
+    - scope: variable.language.vreg.octo
+      match: (?<=^|\s)(?i:v\h)(?=$|\s)
+
+    # Address register
+    - scope: variable.language.ireg.octo
+      match: (?<=^|\s)i(?=$|\s)
+
+    # Assignment operators
+    - scope: keyword.operator.assignment.octo
+      match: (?<=^|\s)(?:\:=|\+=|\-=|=\-|\|=|&=|\^=|<<=|>>=)(?=$|\s)
+
+    # Comparison operators
+    - scope: keyword.operator.comparison.octo
+      match: (?<=^|\s)(?:==|!=)(?=$|\s)
+
+    # Relational operators
+    - scope: keyword.operator.relational.octo
+      match: (?<=^|\s)(?:<=|>=|<|>)(?=$|\s)
+
+    # Control flow keywords
+    - scope: keyword.control.octo
+      match: (?<=^|\s)(?:return|if|then|begin|else|end|loop|again|while|jump|jump0|\:call|\;)(?=$|\s)
+
+    # alias and const directives
+    - scope: storage.type.octo
+      match: (?<=^|\s)(?:\:alias|\:const)(?=$|\s)
+
+    # Self-modifying code commands
+    - scope: support.function.octo
+      match: (?<=^|\s)(?:\:unpack|\:next|\:org)(?=$|\s)
+
+    # Metaprogramming commands
+    - scope: support.function.octo
+      match: (?<=^|\s)(?:\:macro|\:calc|\:byte|\:pointer|\:stringmode)(?=$|\s)
+
+    # Breakpoint command
+    - scope: support.function.octo
+      match: (?<=^|\s)(?:\:breakpoint)(?=$|\s)
+
+    # Assertion command
+    - scope: support.function.octo
+      match: (?<=^|\s)(?:\:assert)(?=$|\s)
+
+    # Memory monitor command
+    - scope: support.function.octo
+      match: (?<=^|\s)(?:\:monitor)(?=$|\s)
+
+    # Deprecated commands
+    - scope: invalid.deprecated.octo
+      match: (?<=^|\s)(\:proto)(?=$|\s)
+
+    # Statement keywords (standard)
+    - scope: keyword.other.octo
+      match: (?<=^|\s)(?:clear|bcd|save|load|sprite|hex|random|delay|pitch|key|-key|buzzer|native)(?=$|\s)
+
+    # Statement keywords (SCHIP)
+    - scope: keyword.other.octo
+      match: (?<=^|\s)(?:hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit|saveflags|loadflags)(?=$|\s)
+
+    # Statement keywords (XO-Chip)
+    - scope: keyword.other.octo
+      match: (?<=^|\s)(?:long|plane|audio|scroll-up)(?=$|\s)
+
+    # Binary numbers
+    - scope: constant.numeric.binary.octo
+      match: (?<=^|\s)[+\-]?0b[01]+(?=$|\s)
+
+    # Hexadecimal numbers
+    - scope: constant.numeric.hexadecimal.octo
+      match: (?<=^|\s)[+\-]?0x\h+(?=$|\s)
+
+    # Decimal numbers
+    - scope: constant.numeric.decimal.octo
+      match: (?<=^|\s)[+\-]?\d+(?=$|\s)
+
+    # Subroutine scopes
+    - scope: entity.name.function.octo
+      match: (?<=^|\s):\s+\S+(?=$|\s)
+
+    - match: '"'
+      push: string
+
+  string:
+      - meta_scope: string.quoted.double.octo
+      - match: \\[tnrv0\\"]
+        scope: constant.character.escape.octo
+      - match: '"'
+        pop: true
